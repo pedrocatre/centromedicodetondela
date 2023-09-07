@@ -10,9 +10,24 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">
 
+
+    <link type="text/css" href="jquery-ui-1.8.16.custom/css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-ui-1.8.16.custom/js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.8.16.custom/js/jquery-ui-1.8.16.custom.min.js"></script>
+
+    <script>
+        $(function() {
+
+            $( "#accordion" ).accordion({
+                collapsible: true, autoHeight: false, navigation: true
+            });
+            $( "#accordion" ).accordion( "activate" , false );
+
+        });
+    </script>
 </head>
 
-<body id="especialidades">
+<body id="Especialidades">
 
 <div id="banner">
     <img src="images/bannerCompleto2.jpg" width="860" height="180" alt="Centro Médico de Tondela informação de contacto"
@@ -49,22 +64,113 @@
 
 
         </div>
-        <div id="content">
-            <h2>Links úteis</h2>
-            <p>
-                <a href="http://www.farmaciasdeservico.net/localidade/viseu/tondela/" target="_blank">Farmácias de
-                    Serviço</a><br/>
-                <a href="http://www.ordemdosmedicos.pt" target="_blank">Ordem dos Médicos</a><br/>
-                <a href="http://www.omd.pt" target="_blank">Ordem dos Médicos Dentistas</a><br/>
-                <a href="http://www.apfisio.pt" target="_blank">Ordem dos Fisioterapeutas</a><br/>
-                <a href="http://www.ordemdospsicologos.pt" target="_blank">Ordem dos Psicólogos </a><br/>
-                <a href="http://www.saudeoral.min-saude.pt" target="_blank">Programa Nacional de Promoção da Saúde
-                    Oral</a>
 
-            </p>
+        <div id="sidebarEspecialidades">
+            <div id="Gastro">            	<ul>
+                <li><p><a id="GastroLink" href="especialidades.html">Gastrenterologia<br>Endoscopia Digestiva</a></p></li>
+                <li><p><a id="MedicinaDentariaLink" href="especialidadeMedicinaDentaria.html">Medicina Dentária</a></p></li>
+                <li><p><a id="TerapiaFalaLink" href="especialidadeTerapiaFala.html">Terapia da Fala</a></p></li>
+                <li><p><a id="OrtodontiaLink" href="especialidadeMedicinaGeralFamiliar.html">Medicina Geral e Familiar</a></p></li>
+                <li><p><a id="UrologiaLink" href="especialidadeUrologia.html">Urologia</a></p></li>
+                <li><p><a id="CirurgiaGeralLink" href="especialidadeCirurgiaGeral.html">Cirurgia Geral</a></p></li>
+                <li><p><a id="PsicologiaLink" href="especialidadePsicologia.html">Psicologia</a></p></li>
+                <li><p><a id="FisioterapiaLink" href="especialidadeFisioterapia.html">Fisioterapia</a></p></li>
+                <li><p><a id="CardiologiaLink" href="especialidadeCardiologia.html">Cardiologia</a></p></li>
+            </ul>
+            </div>
+
+        </div>
+
+        <div id="content">
+            <p>Especialidade que abrange as doenças do aparelho digestivo desde a prevenção ao diagnóstico e orientação terapêutica (<i>especial realce para o rastreio do cancro do aparelho digestivo</i>).</p>
+
+
+
+
+            <div class="demo">
+
+                <div id="accordion">
+                    <h3><a href="#consultadeespecialidade">Consulta de especialidade</a></h3>
+                    <div>
+                        <p>
+                            Por iniciativa própria ou referenciado pelo médico assistente, tem à sua disposição um médico especialista em Gastrenterologia para o orientar na abordagem dos problemas específicos do aparelho digestivo.
+                        </p>
+                    </div>
+                    <h3><a href="#">Endoscopia digestiva alta</a></h3>
+                    <div>
+                        <p>
+                            Endoscopia Digestiva Alta, ou simplesmente Endoscopia Alta, é um exame realizado por um médico especialista que permite visualizar o aparelho digestivo superior, desde a boca até ao primeiro segmento do intestino delgado, designadamente esófago, estômago e duodeno.
+                            Além da observação pormenorizada da superfície interna dos órgãos possibilita também a colheita de material biológico para estudo em laboratório.</p>
+                        <p>Algumas indicações para a realização deste exame são: azia, dificuldade em engolir, dor ou sensação de corpo estranho no esófago, má digestão, enfartamento, dor no estômago, náuseas, vómitos,  anemia, avaliação para cirurgia da obesidade e diagnóstico/vigilância de úlceras, tumores, inflamações e de infecção pelo Helicobacter pylori (que pode ser causa de cancro do estômago).</p>
+                        <p>Este exame poderá ser realizado sob sedação/anestesia (<i>ver Exames com Anestesia/Sedação</i>).
+                            (<a class="linksAccordion" href="preparacaoExames.php">clique para ver a preparação <br>para Endoscopia Digestiva Alta</a>)
+
+                        </p>
+                    </div>
+                    <h3><a href="#">Colonoscopia</a></h3>
+                    <div>
+                        <p>
+                            A colonoscopia é o melhor exame para o estudo do intestino grosso.
+                            É um exame realizado por um médico especialista que permite visualizar todo o intestino grosso. Além da observação pormenorizada da superfície interna do órgão possibilita também a colheita de material biológico para estudo em laboratório e a remoção de pólipos (<i>ver polipectomia</i>). </p>
+                        <p>Algumas indicações para a realização deste exame são: rastreio do cancro colorectal  (<i>ver rastreio do cancro do tubo digestivo</i>), perda de sangue nas fezes, dor abdominal, alteração dos hábitos intestinais ("prisão de ventre",  diarreia), anemia e diagnóstico/vigilância de tumores do cólon e doenças inflamatórias intestinais.</p>
+                        <p>Este exame poderá ser realizado sob sedação/anestesia (<i>ver Exames com Anestesia/Sedação</i>). </p>
+
+                        <p>(<a class="linksAccordion" href="preparacaoExamesColonoscopia.php">clique para ver a preparação para Colonoscopia</a>)
+
+                        </p>
+                    </div>
+                    <h3><a href="#">Polipectomia</a></h3>
+                    <div>
+                        <p>
+                            É um procedimento realizado por um médico especialista que permite a remoção de pólipos, habitualmente localizados no intestino grosso embora possam surgir noutras localizações incluindo o estômago.</p>
+                        <p>Pólipos são pequenas saliências da parede do órgão geralmente parecidas com cogumelos (com cabeça e pedículo). Em regra começam por ser benignos e com o crescimento podem malignizar, estando na origem da maioria dos cancros do intestino grosso. A estratégia da prevenção do cancro do cólon e do recto baseia-se na detecção e extração precoce dos pólipos intestinais (<i>polipectomia</i>).</p>
+                        <p>A polipectomia é realizada através de colonoscopia/endoscopia, não lhe acrescentando dor,  e o pólipo é habitualmente enviado para estudo microscópico.</p>
+                        <p>Deve informar o Gastrenterologista das suas doenças e de todos os  medicamentos que toma.
+
+                        </p>
+
+                    </div>
+
+                    <h3><a href="#">Rastreio do cancro do tubo digestivo</a></h3>
+                    <div>
+                        <p>
+                            Com o rastreio pretende-se a detecção e diagnóstico precoce da doença em fases passíveis de tratamento mais fácil ou mesmo prevenção de evolução para formas mais graves, diminuindo significativamente a morbilidade e mortalidade.</p>
+                        <p>O cancro colorectal é a primeira causa de morte por cancro em Portugal e é potencialmente a doença maligna mais susceptível de ser prevenida, pela detecção precoce inserida nos programas de rastreio. No Centro Médico de Tondela realizamos a detecção precoce do cancro intestinal pela colonoscopia e a prevenção pela remoção de pólipos (<i>ver polipectomia</i>).</p>
+                        <p>Relativamente ao cancro do tubo digestivo superior realizamos ainda endoscopia alta para detecção precoce. Esta pode ser complementada com a pesquisa de Helicobacter pylori, bactéria que infecta frequentemente o estômago e que, segundo a organização mundial de saúde, é uma causa de cancro deste órgão. No Centro Médico de Tondela fazemos a pesquisa de Helicobacter pylori e disponibilizamos o resultado na hora.
+
+
+                        </p>
+                    </div>
+
+                    <h3><a href="#">Exames com anestesia/sedação</a></h3>
+                    <div>
+                        <p>
+                            Em situações específicas os exames podem ser realizados  sob anestesia ou sob sedação consciente.
+
+                        </p>
+                    </div>
+
+
+
+                </div>
+
+            </div><!-- End demo -->
+
+            <div style="display: none;" class="demo-description">
+                <p>
+                    Click headers to expand/collapse content that is broken into logical sections, much like tabs.
+                    Optionally, toggle sections open/closed on mouseover.
+                </p>
+                <p>
+                    The underlying HTML markup is a series of headers (H3 tags) and content divs so the content is
+                    usable without JavaScript.
+                </p>
+            </div><!-- End demo-description -->
+
 
 
         </div>
+
     </div>
 </div>
 
