@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Site da clínica Centro Médico de Tondela"/>
+    <meta name="keywords" content="Centro, Médico, de, Tondela, cínica, dentária, Miguel, Cardoso, Alcides, Catré"/>
+    <meta content="Pedro Gil Lopes Castelo Branco Catré" name="author">
+    <title>Galeria de Fotografias</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="galeriaJquery/jquery.ad-gallery.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="galeriaJquery/jquery.ad-gallery.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var galleries = $('.ad-gallery').adGallery();
+            $('#switch-effect').change(
+                function() {
+                    galleries[0].settings.effect = $(this).val();
+                    return false;
+                }
+            );
+            $('#toggle-slideshow').click(
+                function() {
+                    galleries[0].slideshow.toggle();
+                    return false;
+                }
+            );
+            $('#toggle-description').click(
+                function() {
+                    if(!galleries[0].settings.description_wrapper) {
+                        galleries[0].settings.description_wrapper = $('#descriptions');
+                    } else {
+                        galleries[0].settings.description_wrapper = false;
+                    }
+                    return false;
+                }
+            );
+        });
+    </script>
+
+
+    <style type="text/css">
+        ul {
+            list-style-image:url(list-style.gif);
+        }
+        pre {
+            font-family: "Lucida Console", "Courier New", Verdana;
+            border: 1px solid #CCC;
+            background: #f2f2f2;
+            padding: 10px;
+        }
+        code {
+            font-family: "Lucida Console", "Courier New", Verdana;
+            margin: 0;
+            padding: 0;
+        }
+
+        #gallery {
+
+            background: #FFF;
+        }
+        #descriptions {
+            position: relative;
+            height: 50px;
+            background: #EEE;
+            margin-top: 10px;
+            width: 640px;
+            padding: 10px;
+            overflow: hidden;
+        }
+        #descriptions .ad-image-description {
+            position: absolute;
+        }
+        #descriptions .ad-image-description .ad-description-title {
+            display: block;
+        }
+    </style>
+</head>
+
+<body id="galeria">
+
+<div id="banner">
+    <img src="images/bannerCompleto2.jpg" width="860" height="180" alt="Centro Médico de Tondela informação de contacto"
+         id="logo">
+</div>
+
+
+<div id="mainWrap">
+    <div id="main">
+        <div id="sidebar">
+
+            <p>Um espaço de saúde onde encontra<br/>Gastrenterologia (Alcides Catré)<br/>Medicina Dentária (Miguel
+                Cardoso)<br/>e outras especialidades médicas</p>
+
+            <ul id="mainNav">
+                <li><a href="index.html" id="homeLink">Apresentação</a></li>
+                <br/>
+                <li><a href="contactos.html" id="contactosLink">Horário e Contactos</a></li>
+                <br/>
+                <li><a href="marcacoes.html" id="marcacoesLink">Marcações</a></li>
+                <br/>
+                <li><a href="especialidades.html" id="especialidadesLink">Especialidades</a></li>
+                <br/>
+                <li><a href="corpoclinico.html" id="corpoclinicoLink">Corpo Clínico</a></li>
+                <br/>
+                <li><a href="galeriaDeFotografias.html" id="galeriaLink">Galeria de Fotografias</a></li>
+                <br/>
+                <li><a href="parcerias.html" id="parceriasLink">Parcerias</a></li>
+                <br/>
+                <li><a href="preparacaoExames.html" id="preparacaoExamesLink">Preparação para Exames</a></li>
+                <br/>
+                <li><a href="linksUteis.html" id="linksUteisLink">Links Úteis</a></li>
+            </ul>
+
+
+        </div>
+        <div id="content">
+            <h2>Galeria de fotografias</h2>
+
+            <div id="gallery" class="ad-gallery">
+                <div class="ad-image-wrapper">
+                </div>
+                <div class="ad-controls">
+                </div>
+                <div class="ad-nav">
+                    <div class="ad-thumbs">
+                        <ul class="ad-thumb-list">
+                            <li>
+                                <a href="images/galeriaFotografias/01simbolo.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/01simboloThumbs.jpg" title="Centro Médico de Tondela" class="image0">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/02simbolo.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/02simboloThumbs.jpg" class="image1">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/03exterior.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/03exteriorThumbs.jpg" title="Entrada principal" class="image2">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/04exterior.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/04exteriorThumbs.jpg" title="Frente do Centro Médico de Tondela" class="image3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/05exterior.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/05exteriorThumbs.jpg" class="image4">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/06exterior.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/06exteriorThumbs.jpg" title="Vista exterior do Centro Médico de Tondela" class="image5">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/07exterior.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/07exteriorThumbs.jpg" title="Vista lateral do Centro Médico de Tondela"  class="image6">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/08exterior.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/08exteriorThumbs.jpg" title="Vista posterior do Centro Médico de Tondela" class="image7">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/09balcao.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/09balcaoThumbs.jpg" title="Ao entrar no Centro Médico de Tondela"  class="image8">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/10balcao.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/10balcaoThumbs.jpg" title="Estão disponíveis 4 salas de consulta" class="image9">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/11espera.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/11esperaThumbs.jpg" title="Sala de espera do Centro Médico de Tondela" class="image10">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/12espera.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/12esperaThumbs.jpg" title="Sala de espera do Centro Médico de Tondela" class="image11">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/13crianca.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/13criancaThumbs.jpg" title="Espaço criança do Centro Médico de Tondela" class="image12">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/14crianca.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/14criancaThumbs.jpg" title="Espaço criança do Centro Médico de Tondela" class="image13">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/15dentaria.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/15dentariaThumbs.jpg" title="Sala de Medicina Dentária (sala 4) do Centro Médico de Tondela" class="image14">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/16dentaria.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/16dentariaThumbs.jpg" title="Sala de Medicina Dentária (sala 4) do Centro Médico de Tondela" class="image15">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/17dentaria.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/17dentariaThumbs.jpg" title="Sala de Medicina Dentária (sala 4) do Centro Médico de Tondela" class="image16">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/18gastro.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/18gastroThumbs.jpg" title="Sala 3 do Centro Médico de Tondela" class="image17">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/19gastro.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/19gastroThumbs.jpg" title="Sala 3 do Centro Médico de Tondela" class="image18">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/20sala.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/21fisioThumbs.jpg" title="Sala 2 do Centro Médico de Tondela" class="image19">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/21fisio.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/21fisioThumbs.jpg" title="Sala 1 do Centro Médico de Tondela" class="image20">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/22fisio.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/22fisioThumbs.jpg" title="Sala 1 do Centro Médico de Tondela" class="image21">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/23wc.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/23wcThumbs.jpg" title="Casa de banho adaptada a pessoas com mobilidade condicionada" class="image22">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="images/galeriaFotografias/24simbolo.jpg">
+                                    <img src="images/galeriaFotografias/thumbs/24simboloThumbs.jpg" class="image23">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div id="footer">
+    <div id="insideFooter">
+
+        <div id="footerSidebar1">
+            <p>Miguel Pinto Cardoso, Lda <br/>Página criada por <a id="autor" target="_blank"
+                                                                   href="http://student.dei.uc.pt/~catre/">Pedro
+                Catré</a></p>
+        </div>
+
+        <div id="footerSidebar2">
+            <p>R. Comandante João Matos Ferreira, 88<br/>(Junto às piscinas municipais)<br/>3460-549 Tondela</p>
+        </div>
+        <div id="footerSidebar3">
+            <p>telefones:<br/>email:<br/>Facebook:</p>
+        </div>
+        <div id="footerSidebar4">
+            <p>232 821959 / 91 7373426<br/><a id="emailLink1" href="mailto:geral@centromedicodetondela.com">geral@centromedicodetondela.com</a><br/><a
+                    id="enderecoCentroFooter" target="_blank"
+                    href="http://www.facebook.com/pages/Centro-Médico-de-Tondela/269233563104205">Centro Médico de
+                Tondela</a><br/><a id="enderecoCentroFooter" href="http://centromedicodetondela.com/">www.centromedicodetondela.com</a>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
