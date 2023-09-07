@@ -1,0 +1,764 @@
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'AniversBold';
+    src: url('../fonts/anivers_bold-webfont.eot');
+    src: url('../fonts/anivers_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/anivers_bold-webfont.woff') format('woff'),
+    url('../fonts/anivers_bold-webfont.ttf') format('truetype'),
+    url('../fonts/anivers_bold-webfont.svg#AniversBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    overflow:scroll;
+}
+
+img, fieldset { border: 0; }
+ol { margin-left: 1.4em; list-style: decimal; }
+ul { margin-left: 1em; list-style:square; }
+q:before, q:after { content:''; }
+
+body {
+    background:#516776 url(../images/bkdeBannerCompleto.png) repeat-x center top;
+
+    /* width: 1024px; */
+    /*  margin: 0 auto; apagando isto e a width fica para a esquerda */
+    font-family: Arial, Helvetica, Verdana, Sans-serif;
+
+    font-size: 12px;
+    color: #7794bd;
+
+}
+
+.justificarTexto {
+    text-align:justify;
+}
+
+a {
+
+
+    text-decoration: none;
+    padding-bottom: 4px;
+    white-space: nowrap;
+    text-decoration: none;
+    color:#3879b3;
+}
+
+a:hover {
+    color:#516776;
+    background: url(../images/underline.png) repeat-x 100% 100%;
+}
+
+#content .linksAccordion { /* necessario para dar para ter este estilo nos links dentro dos accordions*/
+
+
+    text-decoration: none;
+    padding-bottom: 4px;
+    white-space: nowrap;
+    text-decoration: none;
+    color:#3879b3;
+}
+
+#content .linksAccordion:hover { /* necessario para dar para ter este estilo nos links dentro dos accordions*/
+    color:#516776;
+    background: url(../images/underline.png) repeat-x 100% 100%;
+}
+
+#banner {
+    text-align:center;
+    background: #FFFFFF url(../images/bkdeBannerCompleto.png) repeat-x center top; /*D1DFEF*/
+    height:180;
+
+    width: 936px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:0;
+
+}
+#banner img{
+    padding-left:38px;
+    padding-right:38px;
+}
+
+#banner #logo {
+    float: left;
+}
+
+
+
+#information {
+    /*float:right;
+    margin-top: 57px;
+    padding-right: 31px;
+    background-color:#0CF;*/
+    text-align:right;
+
+    margin: 0;
+    padding: 0;
+    float: right;
+    /*margin-top: 55px;*/
+
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: AniversBold;
+
+
+
+}
+
+
+
+#information #morada {
+    margin-top:15px;
+
+}
+
+#information a{
+
+
+    border-radius:25px;
+    -moz-border-radius:25px; /* Firefox 3.6 and earlier */
+    color: #FFFFFF;
+    background:#90a8bb;
+    text-decoration: none;
+    border:none;
+    padding:0;
+
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#information a:hover {
+    background:#90a8bb;
+
+    border-bottom: 3px solid #FFF;
+
+
+}
+
+#information #numeroTelefone {
+    margin-top:60px;
+
+    font-size: 20px;
+
+
+
+}
+
+#numeroT {
+    background:#90a8bb;
+    padding-left:5px;
+    padding-right:5px;
+
+    border-radius:25px;
+    -moz-border-radius:25px; /* Firefox 3.6 and earlier */
+}
+
+#information #emailBanner {
+    margin-top:15px;
+    font-size: 20px;
+
+
+}
+
+#mainNav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top:10px;
+    /*background:url(../images/titanium-texture.jpg);*/
+
+}
+
+#mainNav a {
+
+
+    font-size: 1.4em;
+
+    /*display: block;*/
+
+
+    color:#9db2c4;
+
+    line-height:1.7;
+
+    text-decoration: none;
+    padding-bottom: 4px;
+    white-space: nowrap;
+
+
+
+    zoom: 1;
+}
+
+#mainNav a:hover {
+
+    background: url(../images/underline.png) repeat-x 100% 100%;
+
+    color: #516776;
+}
+
+#home #homeLink,
+#contactos #contactosLink,
+#horario #horarioLink,
+#marcacoes #marcacoesLink,
+#Especialidades #especialidadesLink,
+#corpoclinico #corpoclinicoLink,
+#galeria #galeriaLink,
+#parcerias #parceriasLink,
+#preparacaoExames #preparacaoExamesLink,
+#linksUteis #linksUteisLink
+{
+    background: url(../images/underline.png) repeat-x 100% 100%;
+
+    color: #516776;
+}
+
+
+
+#content h2, #sidebar h2, #main h2 {
+    color: #7794aa;
+
+    letter-spacing: 1px;
+    font: 2em Arial, "Palatino Linotype", "Times New Roman", serif;
+    margin-bottom: 12px;
+    font-weight:bold;
+    /*margin-top: 8px;*/
+}
+
+.bulletPointh2 {
+    background:url(../images/bulletPoint5.png) no-repeat left center;
+    /*padding-left: 35px;*/
+    padding-left:21px;
+    /*padding-left: 20px;
+    margin-left: 10px;
+	font-family: Tahoma, Arial, Helvetica, Sans-serif;
+	font-size: 10px;
+
+	color:#a6cdc0;
+	line-height: 32px;*/
+
+}
+
+
+
+#sidebar {
+    color:#9db2c4;
+    padding-bottom:35px;
+
+    float: left;
+    width: 220px;
+
+    margin-top:10px;
+
+}
+
+
+#content {
+    margin-left: 240px;
+    margin-top:95px; /* dantes 10px */
+
+    width:764;
+
+    min-height: 390px;
+
+}
+
+
+
+#content h1 {
+    border-left:#39F;
+    border-left-style:solid;
+    border-left-width:thick;
+    padding-left:10px;
+    border-bottom-width:thin;
+    border-bottom:#39F;
+    border-bottom-style:solid;
+}
+
+#content h4 {
+    font-weight:bold;
+
+    font: 1.8em Arial, "Palatino Linotype", "Times New Roman", serif;
+    color: #7794bd;
+    padding-bottom:10px;
+}
+
+/*#shadowLeft {
+
+	display:inline-block;
+	width:37px;
+}*/
+
+
+#main {/*mudando algo aqui tambem devo mudar #mainDaGaleria*/
+    width: 820px;
+    margin: 0 auto;
+    padding-left:58px;
+    padding-right:58px;
+    /*background-color:#FDFCD2;*/
+    background:#FFF url(../images/fundoSombra.png) no-repeat;
+    overflow:hidden;
+
+}
+
+#main h1 {/*mudando algo aqui tambem devo mudar #mainDaGaleria h1*/
+    font: italic 4em Baskerville, "Palatino Linotype", "Times New Roman", serif;
+    color: #46874D;
+    /* background: url(../images/underline.png) no-repeat 0px 88%; */
+    padding-left: 2px;
+}
+
+#main p {
+    font: 1.45em/150% Arial, Helvetica, sans-serif;
+    /*font: 17.3px Arial, Helvetica, sans-serif;*/
+    margin: 0 0 10px 0;
+}
+/* Este mainDaGaleria so afecta a pagina da galeria. La tive que mudar o id para que
+isto:
+#main p {
+	font: 1.4em/150% Arial, Helvetica, sans-serif;
+	margin: 0 0 25px 0;
+}
+Nao estragasse o plugin de slideshow...
+
+*/
+#mainDaGaleria {
+    width: 820px;
+    margin: 0 auto;
+    padding-left:58px;
+    padding-right:58px;
+    /*background-color:#FDFCD2;*/
+    background:#FFF url(../images/fundoSombra.png) no-repeat;
+    overflow:hidden;
+}
+
+#mainDaGaleria h1 {
+    font: italic 4em Baskerville, "Palatino Linotype", "Times New Roman", serif;
+    color: #46874D;
+    /* background: url(../images/underline.png) no-repeat 0px 88%; */
+    padding-left: 2px;
+}
+
+#mainDaGaleria p {
+
+    margin:0;
+    padding:0;
+    font: 1.45em/150% Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+#gallery {
+    margin-bottom:30px;
+}
+
+#mainWrap {
+    /*background: #FDFCD2;*/
+    background:#FFF;
+    width: 100%;
+
+
+}
+
+#sidebar h2 {
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+#sidebar p{
+    margin:0;
+    padding:0;
+    font-size:12px;
+}
+
+
+
+
+#sidebarEspecialidades {
+    float:left;
+    /*width:180;*/
+
+    padding:0px;
+    margin-top:95px;
+    margin-left:25px;
+}
+
+#sidebarEspecialidades ul {
+    margin:0;
+    padding:0;
+    text-align:left;/*	margin: 0 0 0 -4px;*/
+    padding: 0px;
+    list-style: none;
+}
+
+#sidebarEspecialidades li a {
+
+
+    padding-bottom: 5px;
+
+
+    font: 1.1em Arial, Helvetica, sans-serif;
+
+    color:#9db2c4;
+    line-height:20px;
+
+}
+
+
+
+#sidebarEspecialidades li a:hover {
+    color: #516776;
+    background:none;
+    background: url(../images/underline.png) repeat-x 100% 100%;
+}
+
+
+
+#sidebarEspecialidades li p {
+
+    font-size:12px;
+    margin:0;
+    margin-bottom:10px;
+
+}
+
+#sidebarEspecialidades #especialidadeSeleccionada{
+    /*background: #FFF url(../images/fundoDoBotao.png) repeat-x;*//*prettynice6 no-repeat*/
+    background:none;
+    background: url(../images/underline.png) repeat-x 100% 100%;
+    color: #516776;
+}
+
+#sidebarEspecialidades #AlcidesCatre #AlcidesCatreLink,
+#sidebarEspecialidades #MiguelCardoso #MiguelCardosoLink,
+#sidebarEspecialidades #JoanaCarvalho #JoanaCarvalhoLink,
+#sidebarEspecialidades #RosaSaraiva #RosaSaraivaLink,
+#sidebarEspecialidades #HerminioRios #HerminioRiosLink,
+#sidebarEspecialidades #RicardoPatrao #RicardoPatraoLink,
+#sidebarEspecialidades #RosaSimao #RosaSimaoLink,
+#sidebarEspecialidades #CatarinaGoncalves #CatarinaGoncalvesLink,
+#sidebarEspecialidades #AnaAntunes #AnaAntunesLink,
+#sidebarEspecialidades #AntonioMarques #AntonioMarquesLink,
+#sidebarEspecialidades #BrunoRodrigues #BrunoRodriguesLink,
+#sidebarEspecialidades #SilviaLeao #SilviaLeaoLink,
+#sidebarEspecialidades #MariaMarques #MariaMarquesLink
+{
+    /*background: #FFF url(../images/fundoDoBotao.png) repeat-x;*//*prettynice6 no-repeat*/
+    background:none;
+    background: url(../images/underline.png) repeat-x 100% 100%;
+    color: #516776;
+}
+
+#sidebarEspecialidades #Gastro #GastroLink,
+#sidebarEspecialidades #MedicinaDentaria #MedicinaDentariaLink,
+#sidebarEspecialidades #TerapiaFala #TerapiaFalaLink,
+#sidebarEspecialidades #Ortodontia #OrtodontiaLink,
+#sidebarEspecialidades #Urologia #UrologiaLink,
+#sidebarEspecialidades #CirurgiaGeral #CirurgiaGeralLink,
+#sidebarEspecialidades #Psicologia #PsicologiaLink,
+#sidebarEspecialidades #Fisioterapia #FisioterapiaLink,
+#sidebarEspecialidades #Cardiologia #CardiologiaLink
+{
+    /*background: #FFF url(../images/fundoDoBotao.png) repeat-x;*//*prettynice6 no-repeat*/
+    background:none;
+    background: url(../images/underline.png) repeat-x 100% 100%;
+    color: #516776;
+}
+
+
+#sidebarEspecialidades #PreparacaoEndoscopia #PreparacaoEndoscopiaLink,
+#sidebarEspecialidades #PreparacaoColonoscopia #PreparacaoColonoscopiaLink,
+#sidebarEspecialidades #PreparacaoSobSedacao #PreparacaoSobSedacaoLink
+{
+    /*background: #FFF url(../images/fundoDoBotao.png) repeat-x;*//*prettynice6 no-repeat*/
+    background:none;
+    background: url(../images/underline.png) repeat-x 100% 100%;
+    color: #516776;
+}
+
+#sidebarEspecialidades #PreparacaoEndoscopia #PreparacaoEndoscopiaLink{
+    /*background: #FFF url(../images/fundoDoBotao.png) repeat-x;*//*prettynice6 no-repeat*/
+    background:none;
+    background: url(../images/underline.png) repeat-x 100% 100%;
+    color: #516776;
+}
+
+
+
+#corpoclinico #sidebarEspecialidades .corpoClinicoMedico{
+    /*font-size:11px;*/
+    font-weight:bold;
+    font-size:14px;
+}
+
+
+#sidebar2 ul {
+    margin: 0 0 0 -4px;
+    padding: 0px;
+    list-style: none;
+}
+#sidebar2 li a {
+    display: block;
+    padding: 3px;
+    font: 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+}
+
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear { zoom: 1; }
+
+#sidebar li {
+    display: inline;
+}
+#sidebar a {
+    zoom: 1;
+}
+
+/* footer */
+
+#footer {
+
+
+    clear: both;
+    font-family: Tahoma, Arial, Helvetica, Sans-serif;
+    font-size: 10px;
+    /*color: #c9c9c9;*/
+    color:#c5d2de;
+
+    /*padding: 13px 25px;*/
+    line-height: 18px;
+    background-color:#516776;
+    text-align:center;
+
+
+    margin: auto;
+    width:936px;
+
+    /*overflow:hidden;
+    zoom:1;*/
+}
+
+#footer a {
+    padding-bottom:0;
+    color: #FFF;
+
+    text-decoration: none;
+}
+
+#autor {
+    background:none;
+}
+#enderecoCentroFooter {
+    background:none;
+
+}
+
+#emailLink1 {
+    background:none;
+}
+
+#footer a:hover {
+    color: #db6d16;
+}
+
+#footer #altnav {
+    font-size: 9px;
+    width: 350px;
+    float: right;
+
+    text-align: right;
+}
+
+#insideFooter {
+    text-align:left;
+    width:820px;
+    margin: 0 auto;
+    line-height:normal;
+    padding-left:38px;
+    padding-right:38px;
+    padding: 13px 25px;
+
+
+    /*overflow:hidden;
+        zoom:1;*/
+
+}
+
+#footerSidebar1 {
+    float: left;
+    width: 220px;
+
+}
+
+#footerSidebar2 {
+
+    float:left;
+    width: 300px;
+}
+#footerSidebar3 {
+
+    float:left;
+
+}
+
+#footerSidebar4 {
+    margin-left:580px;
+    float-right;
+
+}
+
+
+
+#emailLink {
+    border: none;
+    background:url(../images/email.gif) no-repeat left center;
+    padding-left: 20px;
+
+    font-family: Tahoma, Arial, Helvetica, Sans-serif;
+    font-size: 10px;
+
+    color:#a6cdc0;
+    /*margin-top:30px;*/
+    /*padding: 13px 25px;*/
+
+    line-height: 32px;
+}
+
+#Especialidades #content,
+#preparacaoExames #content,
+#corpoclinico #content  {
+    margin-left:470px;
+    float-right;
+}
+
+
+
+#preparacaoExames #content {
+    margin-left:450px;
+    float-right;
+}
+
+#preparacaoExames #content {
+    margin-left:450px;
+    float-right;
+}
+
+/* Estilo do formulario */
+
+
+
+#nome,
+#email,
+#numeroTele,
+#comentarios,
+#diasPreferidos,
+#especialidadeEscolhida,
+#periodo {
+    /*background-color: #C7E0DB;
+    font-family:Arial, Helvetica, sans-serif;
+
+    width: 300px;*/
+
+}
+
+
+#nome:focus,
+#email:focus,
+#numeroTele:focus,
+#comentarios:focus,
+#diasPreferidos:focus,
+#especialidadeEscolhida:focus,
+#periodo:focus
+{
+    background-color: #EBF5FE;
+}
+
+
+#formulario p {
+    margin-bottom:5px;
+}
+
+
+#agradecimentosFormulario1 {
+    font-size:30px;
+}
+
+#agradecimentosFormulario2 {
+    font-size:20px;
+    color:#000;
+}
+
+/* jquery accordion */
+#accordion a{
+    background:none;
+}
+
+#accordion{
+    width: 98%;/* esta linha em conjunto com a de baixo e um fix para o IE 6 */
+    border-collapse: collapse; /* esta linha em conjunto com a de cima e um fix para o IE 6 */
+    padding-bottom: 30px;
+}
+
+#accordion p{
+    font: Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+
+
+/* Google Maps balloon */
+
+
+#contentMapBalloon p{
+    margin:0;
+    padding: 0;
+    line-height:normal;
+}
+
+#contentMapBalloon h2{
+    margin:0;
+    padding: 0;
+    line-height:normal;
+}
+
+#map_canvas {
+    margin-bottom:30px;
+}
+#contentMapBalloon{
+    min-height:100px;
+    min-width:400px;
+}
+/*#contentMapBalloon h2{
+	margin:0;
+	padding:0;
+	text-align:center;
+}*/
+
+#erros {
+    color:#FF1717;
+
+
+}
+
+#agradecimentos {
+    color:#666;
+
+
+}
