@@ -440,23 +440,23 @@ Nao estragasse o plugin de slideshow...
 
 #sidebarEspecialidades #AlcidesCatre #AlcidesCatreLink,
 #sidebarEspecialidades #MiguelCardoso #MiguelCardosoLink,
-#sidebarEspecialidades #JoanaCarvalho #JoanaCarvalhoLink,
-#sidebarEspecialidades #RosaSaraiva #RosaSaraivaLink,
-#sidebarEspecialidades #HerminioRios #HerminioRiosLink,
-#sidebarEspecialidades #RicardoPatrao #RicardoPatraoLink,
 #sidebarEspecialidades #RosaSimao #RosaSimaoLink,
 #sidebarEspecialidades #CatarinaGoncalves #CatarinaGoncalvesLink,
-#sidebarEspecialidades #AnaAntunes #AnaAntunesLink,
 #sidebarEspecialidades #AntonioMarques #AntonioMarquesLink,
-#sidebarEspecialidades #BrunoRodrigues #BrunoRodriguesLink,
 #sidebarEspecialidades #SilviaLeao #SilviaLeaoLink,
-#sidebarEspecialidades #MariaMarques #MariaMarquesLink
+#sidebarEspecialidades #MariaMarques #MariaMarquesLink,
+#sidebarEspecialidades #AnaGameiro #AnaGameiroLink,
+#sidebarEspecialidades #DavidTeixeira #DavidTeixeiraLink,
+#sidebarEspecialidades #AnaRitaMatos #AnaRitaMatosLink,
+#sidebarEspecialidades #FernandoTavaresPereira #FernandoTavaresPereiraLink
 {
     /*background: #FFF url(../images/fundoDoBotao.png) repeat-x;*//*prettynice6 no-repeat*/
     background:none;
     background: url(../images/underline.png) repeat-x 100% 100%;
     color: #516776;
 }
+
+
 
 #sidebarEspecialidades #Gastro #GastroLink,
 #sidebarEspecialidades #MedicinaDentaria #MedicinaDentariaLink,
