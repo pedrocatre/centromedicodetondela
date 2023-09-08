@@ -26,8 +26,7 @@
         let map;
 
         async function initMap() {
-            // The location of Uluru
-            const position = { lat: 40.52251, lng: -8.084221 };
+            const position = { lat: 40.521125, lng: -8.082624 }; //
             // Request needed libraries.
             //@ts-ignore
             const { Map } = await google.maps.importLibrary("maps");
@@ -40,11 +39,65 @@
                 mapId: "CENTRO_MEDICO_MAP_ID",
             });
 
-            // The marker, positioned at Uluru
-            const marker = new AdvancedMarkerElement({
+            // const marker = new AdvancedMarkerElement({
+            //     map: map,
+            //     position: position,
+            //     title: "Centro Médico de Tondela",
+            //     icon:'images/logoMapa1.png'
+            // });
+
+            var contentString = '<div id="contentMapBalloon">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<h2 id="firstHeading" class="firstHeading">Centro Médico de Tondela</h2>'+
+                '<div id="bodyContent">'+
+                '<p><a target="_blank" href="http://maps.google.com/maps?q=rua+comandante+jo%C3%A3o+matos+ferreira+88,+tondela&hl=en&ie=UTF8&sll=37.0625,-95.677068&sspn=26.258506,56.513672&t=h&hq=&hnear=R.+Comandante+Jo%C3%A3o+Matos+Ferreira+88,+Tondela,+3460+Tondela,+Viseu,+Portugal&view=map">R. Comandante João Matos Ferreira 88</a></p>'+
+                '<p>3460 Tondela, <b>232 821959 / 91 7373426</b></p>'+
+                '<br/>'+
+                '<img src="images/exterior11.jpg"   width="365" height="139" alt="Centro Médico de Tondela fotografia exterior"/>'+
+                '</div>'+
+
+                '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var referenceImageAcert = new google.maps.MarkerImage('images/ACERT_logo.png',
+                new google.maps.Size(35,35),
+                new google.maps.Point(0,0),
+                new google.maps.Point(35,35)
+            );
+
+
+            var acertPos = new google.maps.LatLng(40.521639, -8.08384);
+            var acertMarker = new google.maps.Marker({
+                position: acertPos,
                 map: map,
+                icon: referenceImageAcert,
+                title:"ACERT",
+                zIndex: 3});
+
+
+            var companyImage = new google.maps.MarkerImage('images/logoMapa1.png',
+                new google.maps.Size(55,35),//55,35
+                new google.maps.Point(0,0),
+                new google.maps.Point(35,35)
+            );
+
+            var icon = {
+                url: 'images/logoMapa1.png', // url
+                scaledSize: new google.maps.Size(90, 55), // size
+                anchor: new google.maps.Point(0, 5),
+            };
+
+            const companyMarker = new google.maps.Marker({
                 position: position,
-                title: "Centro Médico de Tondela",
+                icon:icon,
+                map: map,
+            });
+
+            google.maps.event.addListener(companyMarker, 'click', function() {
+                infowindow.open(map,companyMarker);
             });
         }
 

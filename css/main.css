@@ -725,6 +725,7 @@ Nao estragasse o plugin de slideshow...
 #map {
     height: 480px;
     width: 580px;
+    margin-bottom:30px;
 }
 
 /* Google Maps balloon */
